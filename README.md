@@ -1,4 +1,4 @@
-![Java Banking System](https://i.imgur.com/VhR2n2I.png)
+https://i.imgur.com/8J0xK9m.png
 
 
 
