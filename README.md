@@ -1,3 +1,6 @@
+![Banking System Banner](https://i.imgur.com/8J0xK9m.png)
+
+
 # 🏦✨ JAVA BANKING MANAGEMENT SYSTEM
 
 # 🚀 Overview
@@ -27,20 +30,7 @@ Supports **User & Admin roles**, secure transactions, file-based persistent stor
 
 ---
 
-# 🧠 System Architecture
 
-## 🧩 Class Diagram (Simplified)
-Person
-│
-├── User
-│ └── Account
-│
-└── Admin
-
-yaml
-Copy code
-
----
 
 # 🧱 Core Classes
 
@@ -105,8 +95,6 @@ Copy code
 │
 └── Main.java
 
-yaml
-Copy code
 
 ---
 
@@ -127,7 +115,7 @@ Copy code
 ---
 
 # 🙌 Contributors
-- **Nafis** (Developer)
+- **Nafis Kamal** (Developer)
 
 ---
 
