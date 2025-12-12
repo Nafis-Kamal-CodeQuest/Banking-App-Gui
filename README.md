@@ -1,127 +1,135 @@
-.
+# 🏦✨ JAVA BANKING MANAGEMENT SYSTEM
 
-🏦✨ JAVA BANKING MANAGEMENT SYSTEM
-🚀 Overview
+# 🚀 Overview
+A modern, fully functional **Banking System** built using **Java OOP + Swing UI + File Serialization**.
 
-A modern, fully functional Banking System built using Java OOP + Swing UI + File Serialization.
-Supports User & Admin roles, secure transactions, and persistent data storage — all inside a clean GUI.
+Supports **User & Admin roles**, secure transactions, file-based persistent storage, and a clean, intuitive GUI.
 
-🔥 Features
-👤 User Features
+---
 
-💵 Deposit money
+# 🔥 Features
 
-💸 Withdraw money
+## 🧑‍💼 User Features
+- 💵 Deposit money  
+- 💸 Withdraw money  
+- 🔁 Transfer money (with balance validation)  
+- 📊 Check account balance  
+- 📜 View transaction history  
+- 💾 Auto-save using serialization  
 
-🔁 Transfer money (with balance checking)
+---
 
-📊 View balance
+## 🛡️ Admin Features
+- 👁️ View all users  
+- 📂 View all transactions  
+- ❌ Delete any user  
+- 🔍 Inspect logs  
 
-📜 Transaction history
+---
 
-💾 Auto-save using serialization
+# 🧠 System Architecture
 
-🛡 Admin Features
-
-👁 View all users
-
-📂 View all transactions
-
-❌ Delete any user
-
-🔍 Inspect logs
-
-🧩 System Architecture
-🧠 Class Diagram (Simplified)
+## 🧩 Class Diagram (Simplified)
 Person
- ├── User
- │     ├── Account
- │     └── List<Transaction>
- └── Admin
+│
+├── User
+│ └── Account
+│
+└── Admin
 
-📦 Core Classes
+yaml
+Copy code
 
-Person – basic user identity
+---
 
-User – account holder (has account + transactions)
+# 🧱 Core Classes
 
-Admin – superuser with system control
+## 👤 Person
+- Base class for all identities  
+- Stores name, email, password, and ID  
 
-Account – handles credit/debit and balance
+## 👤 User
+- Extends Person  
+- Owns an Account  
+- Handles deposits, withdrawals, transfers, and transaction records  
 
-Transaction – records each transaction
+## 🗝️ Admin
+- Extends Person  
+- Can view/delete users and view all transactions  
 
-BankingSwing – full Swing-based UI
+## 💳 Account
+- Stores balance  
+- Handles add/remove funds  
 
-🎨 User Interface
+## 📄 Transaction
+- Stores transaction type, amount, time, and summary  
 
-Built with:
+---
 
-Java Swing
+# 🖥️ User Interface
+- Built using **Java Swing**  
+- Clean, easy-to-navigate dashboard  
+- Admin and User views separated  
+- Input validation and error handling  
 
-CardLayout
+---
 
-Dialog-based input
+# 💾 Data Storage
+- Fully implemented using **Java Serialization**  
+- Automatically saves:
+  - User accounts  
+  - Balances  
+  - Transaction history  
+  - Deleted/updated data  
 
-Clean and modern navigation
+---
 
-(Add screenshots here)
+# 📦 Project Structure
+/bankingSystem
+│
+├── Person.java
+├── User.java
+├── Admin.java
+├── Account.java
+├── Transaction.java
+│
+├── gui/
+│ ├── LoginUI.java
+│ ├── UserDashboard.java
+│ ├── AdminDashboard.java
+│ ├── TransferUI.java
+│ └── ...
+│
+├── data/
+│ └── users.ser
+│
+└── Main.java
 
-⚙️ Tech Stack
+yaml
+Copy code
 
-Java (OOP)
+---
 
-Swing
+# 🏁 How to Run
+1. Clone the repo  
+2. Open in any Java IDE  
+3. Run `Main.java`  
+4. App launches with Login UI  
 
-Serialization
+---
 
-Collections Framework
+# 🏗️ Tech Stack
+- ☕ Java  
+- 🎨 Swing  
+- 💾 Serialization  
+- 🧱 OOP  
 
-🔧 How to Run
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/your-repo-name.git
+---
 
-2️⃣ Open in Any Java IDE
+# 🙌 Contributors
+- **Nafis** (Developer)
 
-Supports:
+---
 
-IntelliJ
-
-Eclipse
-
-NetBeans
-
-VS Code
-
-3️⃣ Run the Main File
-BankingSwing.java
-
-🧪 Default Admin Login
-Email: admin@bank.com  
-Password: admin123
-
-🌱 Future Improvements
-
-🔐 Add password hashing
-
-🗄 Replace serialization with MySQL
-
-📱 Android app version
-
-☁ REST API backend
-
-🎨 JavaFX modern UI
-
-🤝 Contributing
-
-Pull requests are welcome.
-Feel free to open an issue for ideas or bugs.
-
-⭐ Support the Project
-
-If you like this project, give it a star ⭐ — it helps a lot!
-
-👨‍💻 Author
-
-Nafis Kamal
-CSE Student • Java Developer • Problem Solver
+# ⭐ If you like this project
+Give it a **star** on GitHub! ⭐  
