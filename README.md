@@ -1,6 +1,3 @@
-https://i.imgur.com/8J0xK9m.png
-
-
 
 # 🏦✨ JAVA BANKING MANAGEMENT SYSTEM
 
